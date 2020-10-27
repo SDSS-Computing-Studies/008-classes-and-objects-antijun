@@ -51,9 +51,8 @@ class student:
     def getHonorRoll(self):
         self.gradeList.sort()
         self. gradeList.reverse()
-        hAverage = (self.gradeList[0] + self.gradeList[1] +
-                    self.gradeList[2] + self.gradeList[3] + self.gradeList[4]) / 5
-        if round(hAverage, 1) >= 86:
+        hAverage = (self.gradeList[0] + self.gradeList[1] + self.gradeList[2] + self.gradeList[3] + self.gradeList[4]) / 5)
+        if hAverage >= 86:
             return True
         else:
             return False
