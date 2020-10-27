@@ -70,10 +70,10 @@ class student:
         print(self.gradeList[index])
 
     def getCourses(self, clist):
-        clist = self.courses
+        self.courses = clist
 
     def getGrades(self, glist):
-        glist = self.gradeList
+        self.gradeList = glist
 
     def constructor(self):
         pass
