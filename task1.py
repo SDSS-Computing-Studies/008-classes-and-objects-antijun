@@ -34,7 +34,7 @@ class student:
     # properties should be listed first
 
     # You will need to create your own input parameters for all methods
-    def __init__(self, name, studentNumber, grade, courses = [], gradeList = []):
+    def __init__(self, name, studentNumber, grade, courses=[], gradeList=[]):
         self.name = name
         self.studentNumber = studentNumber
         self.grade = grade
@@ -46,12 +46,13 @@ class student:
 
     def average(self):
         gAverage = sum(self.gradeList) / len(self.gradeList)
-        print(gAverage)
+        return gAverage
 
     def getHonorRoll(self):
         self.gradeList.sort()
         self. gradeList.reverse()
-        hAverage = (self.gradeList[0] + self.gradeList[1] + self.gradeList[2] + self.gradeList[3] + self.gradeList[4]) / 5)
+        hAverage = (self.gradeList[0] + self.gradeList[1] +
+                    self.gradeList[2] + self.gradeList[3] + self.gradeList[4]) / 5
         if hAverage >= 86:
             return True
         else:
