@@ -40,9 +40,11 @@ class student:
         self.grade = grade
         self.courses = courses
         self.gradeList = gradeList
+        print("Name: " + self.name + ", Student #: " +
+              str(self.studentNumber) + ", Grade: " + str(self.grade))
 
     def __del__(self):
-        pass
+        print("Goodbye " + self.name)
 
     def average(self):
         gAverage = sum(self.gradeList) / len(self.gradeList)
@@ -74,9 +76,6 @@ class student:
 
     def getGrades(self, glist):
         self.gradeList = glist
-
-    def constructor(self):
-        pass
 
 
 def main():
