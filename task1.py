@@ -53,7 +53,7 @@ class student:
         self. gradeList.reverse()
         hAverage = (self.gradeList[0] + self.gradeList[1] +
                     self.gradeList[2] + self.gradeList[3] + self.gradeList[4]) / 5
-        if hAverage >= 86:
+        if round(hAverage, 1) >= 86:
             return True
         else:
             return False
